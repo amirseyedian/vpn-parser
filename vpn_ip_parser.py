@@ -3,7 +3,7 @@ import re
 import subprocess
 
 # Directory containing ovpn files
-vpn_dir = './'
+ovpn_dir = './'
 
 # List to store ovpn file names with responsive IPs
 responsive_ovpn_files = []
