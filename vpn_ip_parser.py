@@ -16,9 +16,9 @@ def extract_ip(ovpn_content):
         return match.group(1)
     return None
 
-# Function to ping an IP address 15 times
+# Function to ping an IP address 5 times
 def ping_ip(ip_address):
-    command = ['ping', '-c', '15', ip_address]
+    command = ['ping', '-c', '5', ip_address]
     try:
         output = subprocess.check_output(command, stderr=subprocess.STDOUT, universal_newlines=True)
         if ' 0% packet loss' in output:
